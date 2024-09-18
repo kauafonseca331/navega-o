@@ -6,7 +6,7 @@ const Sobre = () => {
     <View style={styles.container}>
       <View style={styles.profileContainer}>
         <Image
-          source={{ uri: 'https://via.placeholder.com/150' }} // Substitua pela URL da sua imagem de perfil
+          source={{ uri: 'https://via.placeholder.com/150' }} 
           style={styles.profileImage}
         />
       </View>

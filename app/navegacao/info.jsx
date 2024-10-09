@@ -1,14 +1,11 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 const Sobre = () => {
   return (
     <View style={styles.container}>
       <View style={styles.profileContainer}>
-        <Image
-          source={{ uri: 'https://via.placeholder.com/150' }} // Substitua pela URL da sua imagem de perfil
-          style={styles.profileImage}
-        />
+        <Text style={styles.profileImage}>😎</Text>
       </View>
       <Text style={styles.title}>Kauã Fonseca Vieira</Text>
       <Text style={styles.subtitle}>Desenvolvedor Mobile</Text>
@@ -25,41 +22,50 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
-    backgroundColor: '#f0f4f8',
+    backgroundColor: '#eaeaea', 
   },
   profileContainer: {
     marginBottom: 20,
-    elevation: 5, 
-    shadowColor: '#000', 
-    shadowOffset: { width: 0, height: 2 },
+    borderRadius: 100, 
+    backgroundColor: '#ffffff', 
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.3,
-    shadowRadius: 3,
+    shadowRadius: 6,
+    elevation: 8, 
+    padding: 10, 
   },
   profileImage: {
-    width: 120,
-    height: 120,
-    borderRadius: 60, 
-    borderWidth: 3,
-    borderColor: '#fff',
+    fontSize: 100, 
+    textAlign: 'center',
   },
   title: {
-    fontSize: 26,
-    fontWeight: '700',
+    fontSize: 28,
+    fontWeight: 'bold',
     color: '#333',
-    marginBottom: 4,
+    marginBottom: 8,
+    letterSpacing: 1, 
   },
   subtitle: {
-    fontSize: 18,
-    color: '#888',
-    marginBottom: 16,
+    fontSize: 20,
+    color: '#555',
+    marginBottom: 24,
     fontStyle: 'italic',
   },
   description: {
     fontSize: 16,
-    color: '#555',
+    color: '#444',
     textAlign: 'center',
     lineHeight: 24,
     paddingHorizontal: 20,
+    backgroundColor: '#ffffff', 
+    borderRadius: 10, 
+    paddingVertical: 15, 
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 4,
   },
 });
 
